@@ -5,12 +5,10 @@ const Model = use('Model')
 
 class Patient extends Model {
 
-    rdv(){
-        return this.hasMany('App/Models/Rdv')
-      }
+    appointments() {
+        return this.hasMany('App/Models/Appointment')
+    }
 
-
-      
 }
 
 module.exports = Patient
